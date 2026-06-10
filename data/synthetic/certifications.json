@@ -1,0 +1,52 @@
+{
+  "certifications": [
+    {
+      "id": "PL-300",
+      "name": "Power BI Data Analyst",
+      "recommended_hours": 28,
+      "target_practice_score": 75,
+      "skills": [
+        "Power BI modelling",
+        "DAX",
+        "visual analytics",
+        "data quality reporting"
+      ]
+    },
+    {
+      "id": "DP-900",
+      "name": "Azure Data Fundamentals",
+      "recommended_hours": 22,
+      "target_practice_score": 75,
+      "skills": [
+        "relational data",
+        "analytical workloads",
+        "data governance",
+        "cloud data basics"
+      ]
+    },
+    {
+      "id": "AI-900",
+      "name": "Azure AI Fundamentals",
+      "recommended_hours": 18,
+      "target_practice_score": 75,
+      "skills": [
+        "AI workloads",
+        "responsible AI",
+        "machine learning basics",
+        "computer vision basics"
+      ]
+    },
+    {
+      "id": "SC-900",
+      "name": "Security, Compliance, and Identity Fundamentals",
+      "recommended_hours": 24,
+      "target_practice_score": 75,
+      "skills": [
+        "identity",
+        "access control",
+        "security posture",
+        "compliance concepts"
+      ]
+    }
+  ]
+}

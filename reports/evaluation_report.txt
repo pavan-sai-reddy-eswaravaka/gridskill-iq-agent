@@ -1,0 +1,21 @@
+GridSkill IQ Evaluation Report
+==================================================
+Generated at: 2026-06-10T22:16:18
+Total tests: 14
+Passed: 13
+Failed: 1
+
+[PASS] Learner workflow includes learning path agent - Found: Learning Path Curator Agent
+[PASS] Learner workflow includes study plan agent - Found: Study Plan Generator Agent
+[PASS] Learner workflow includes engagement agent - Found: Engagement Agent
+[PASS] Learner workflow includes assessment agent - Found: Assessment Agent
+[PASS] Learner workflow includes safety critic - Found: Safety Critic Agent
+[PASS] Learner workflow includes synthetic data disclaimer - Found: Synthetic demonstration data only
+[PASS] Learner workflow maps EMP-003 to SC-900 - Found: SC-900
+[PASS] Learner workflow identifies high-risk learner - Found: High Risk
+[PASS] Learner workflow includes sources - Found: Sources used
+[PASS] Manager workflow creates manager summary - Found: Manager Readiness Summary
+[PASS] Manager workflow includes TEAM-A - Found: TEAM-A
+[PASS] Manager workflow includes TEAM-B - Found: TEAM-B
+[PASS] Manager workflow includes TEAM-C - Found: TEAM-C
+[FAIL] Manager workflow passes safety check - Missing: Safety status: Passed

@@ -1,0 +1,7 @@
+employee_id,meeting_hours_per_week,focus_hours_per_week,preferred_learning_slot,shift_pattern
+EMP-001,21,9,Morning,Early operations rota
+EMP-002,14,17,Afternoon,Standard day rota
+EMP-003,24,7,Evening,Incident support rota
+EMP-004,16,15,Morning,Hybrid operations rota
+EMP-005,12,20,Afternoon,Reporting team rota
+EMP-006,23,8,Morning,Forecasting support rota

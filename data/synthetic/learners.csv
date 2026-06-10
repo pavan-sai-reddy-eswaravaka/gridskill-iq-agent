@@ -1,0 +1,7 @@
+learner_id,employee_id,team_id,role,target_certification,practice_score_avg,hours_studied,skill_gap,readiness_status
+L-1001,EMP-001,TEAM-A,Grid Operations Analyst,PL-300,68,14,Power BI modelling,At Risk
+L-1002,EMP-002,TEAM-A,Smart Meter Data Analyst,DP-900,78,21,Data fundamentals,Nearly Ready
+L-1003,EMP-003,TEAM-B,Cybersecurity Support Analyst,SC-900,62,11,Identity and access concepts,High Risk
+L-1004,EMP-004,TEAM-B,Renewable Energy Operations Trainee,AI-900,74,19,AI use cases and responsible AI,Nearly Ready
+L-1005,EMP-005,TEAM-C,Power BI Reporting Analyst,PL-300,84,27,DAX optimisation,Ready
+L-1006,EMP-006,TEAM-C,Energy Forecasting Analyst,DP-900,58,9,Relational and analytical data concepts,High Risk
