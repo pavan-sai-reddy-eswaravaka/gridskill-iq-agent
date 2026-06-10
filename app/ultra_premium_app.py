@@ -11,6 +11,7 @@ sys.path.append(str(SRC))
 
 from gridskill_multi_agent import GridSkillOrchestratorAgent
 from gridskill_multi_agent_v2 import GridSkillAdvancedOrchestrator
+from gridskill_multi_agent_v3 import GridSkillGroundedOrchestrator
 
 
 st.set_page_config(
@@ -450,6 +451,7 @@ def readiness_badge(status):
 learners_df, work_df = load_data()
 basic_agent = GridSkillOrchestratorAgent()
 advanced_agent = GridSkillAdvancedOrchestrator()
+grounded_agent = GridSkillGroundedOrchestrator()
 
 
 with st.sidebar:

@@ -1,12 +1,12 @@
 {
-  "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-  "started_at": "2026-06-10T23:07:11",
-  "finished_at": "2026-06-10T23:07:11",
+  "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+  "started_at": "2026-06-11T00:24:05",
+  "finished_at": "2026-06-11T00:24:05",
   "event_count": 6,
   "events": [
     {
-      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-      "timestamp": "2026-06-10T23:07:11",
+      "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+      "timestamp": "2026-06-11T00:24:05",
       "agent_name": "GridSkill Advanced Orchestrator",
       "action": "Initial learner routing",
       "input_summary": "employee_id=EMP-001",
@@ -20,8 +20,8 @@
       "status": "Completed"
     },
     {
-      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-      "timestamp": "2026-06-10T23:07:11",
+      "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+      "timestamp": "2026-06-11T00:24:05",
       "agent_name": "Learning Path Curator Agent",
       "action": "Map role to certification path",
       "input_summary": "role=Grid Operations Analyst, certification=PL-300",
@@ -34,8 +34,8 @@
       "status": "Completed"
     },
     {
-      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-      "timestamp": "2026-06-10T23:07:11",
+      "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+      "timestamp": "2026-06-11T00:24:05",
       "agent_name": "Study Plan Generator Agent",
       "action": "Generate workload-aware study plan",
       "input_summary": "hours_studied=14, meeting_hours=21, focus_hours=9",
@@ -48,8 +48,8 @@
       "status": "Completed"
     },
     {
-      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-      "timestamp": "2026-06-10T23:07:11",
+      "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+      "timestamp": "2026-06-11T00:24:05",
       "agent_name": "Engagement Agent",
       "action": "Recommend engagement strategy",
       "input_summary": "shift_pattern=Early operations rota",
@@ -61,8 +61,8 @@
       "status": "Completed"
     },
     {
-      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-      "timestamp": "2026-06-10T23:07:11",
+      "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+      "timestamp": "2026-06-11T00:24:05",
       "agent_name": "Assessment Agent",
       "action": "Assess readiness and generate practice questions",
       "input_summary": "practice_score=68, hours_studied=14",
@@ -75,8 +75,8 @@
       "status": "Completed"
     },
     {
-      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
-      "timestamp": "2026-06-10T23:07:11",
+      "run_id": "23b51d96-f5e3-4958-8c5b-cfe8462fb5c9",
+      "timestamp": "2026-06-11T00:24:05",
       "agent_name": "Safety Critic Agent",
       "action": "Safety and responsible AI validation",
       "input_summary": "Final learner response",
