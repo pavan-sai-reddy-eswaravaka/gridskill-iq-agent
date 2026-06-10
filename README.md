@@ -864,3 +864,28 @@ This project is for hackathon demonstration and educational use.
 
 
 
+
+
+## V3 Grounded Reasoning Upgrade
+
+GridSkill IQ now includes a V3 grounded multi-agent workflow.
+
+This upgrade adds a Foundry IQ-style local retrieval layer that searches synthetic knowledge base documents before the specialist agents generate their outputs. This makes the system more explainable because learner and manager recommendations are supported by retrieved evidence and source files.
+
+### V3 Features
+
+- Synthetic knowledge retrieval from markdown policy and certification documents
+- Grounded evidence snippets before agent decisions
+- Source tracking for retrieved evidence
+- Confidence scoring based on practice score, study progress, focus capacity and evidence availability
+- Specialist agent execution after evidence retrieval
+- Safety Critic Agent validation before final output
+- JSON trace logging for observability and auditability
+- Streamlit frontend buttons for Grounded V3 learner and manager workflows
+
+### Why V3 Matters
+
+The V3 workflow moves the project beyond a simple rule-based prototype. It demonstrates an agentic reasoning pattern where the system first retrieves relevant knowledge, then executes specialist agents, then validates the final answer using a safety critic.
+
+This aligns with the hackathon focus on reasoning agents, grounded knowledge, Microsoft IQ-style architecture, synthetic data, evaluation and responsible AI design.
+
