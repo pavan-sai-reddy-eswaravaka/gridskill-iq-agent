@@ -1,0 +1,91 @@
+{
+  "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+  "started_at": "2026-06-10T23:07:11",
+  "finished_at": "2026-06-10T23:07:11",
+  "event_count": 6,
+  "events": [
+    {
+      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+      "timestamp": "2026-06-10T23:07:11",
+      "agent_name": "GridSkill Advanced Orchestrator",
+      "action": "Initial learner routing",
+      "input_summary": "employee_id=EMP-001",
+      "output_summary": "Matched learner L-1001 with role Grid Operations Analyst and target certification PL-300",
+      "sources": [
+        "learners.csv",
+        "work_signals.csv",
+        "certifications.json"
+      ],
+      "confidence": "Medium",
+      "status": "Completed"
+    },
+    {
+      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+      "timestamp": "2026-06-10T23:07:11",
+      "agent_name": "Learning Path Curator Agent",
+      "action": "Map role to certification path",
+      "input_summary": "role=Grid Operations Analyst, certification=PL-300",
+      "output_summary": "Role: Grid Operations Analyst\nRecommended certification: PL-300 - Power BI Data Analyst\nTarget skills: Power BI modelling, DAX, visual analytics, data quality reporting\nCurrent skill gap: Power BI modelling\nGrounding source: grid_certification_guide.md",
+      "sources": [
+        "grid_certification_guide.md",
+        "certifications.json"
+      ],
+      "confidence": "Medium",
+      "status": "Completed"
+    },
+    {
+      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+      "timestamp": "2026-06-10T23:07:11",
+      "agent_name": "Study Plan Generator Agent",
+      "action": "Generate workload-aware study plan",
+      "input_summary": "hours_studied=14, meeting_hours=21, focus_hours=9",
+      "output_summary": "Recommended remaining study hours: 14\nSuggested study style: 30-minute low-disruption sessions\nSuggested weekly study hours: 4\nEstimated completion time: 4 week(s)\nPreferred learning slot: Morning\nGrounding source: workload_learning_policy.md",
+      "sources": [
+        "workload_learning_policy.md",
+        "certifications.json"
+      ],
+      "confidence": "Medium",
+      "status": "Completed"
+    },
+    {
+      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+      "timestamp": "2026-06-10T23:07:11",
+      "agent_name": "Engagement Agent",
+      "action": "Recommend engagement strategy",
+      "input_summary": "shift_pattern=Early operations rota",
+      "output_summary": "Work pattern: Early operations rota\nMeeting load: 21 hours/week\nFocus capacity: 9 hours/week\nReminder strategy: Use gentle reminders twice per week outside peak operational hours.\nGrounding source: workload_learning_policy.md",
+      "sources": [
+        "workload_learning_policy.md"
+      ],
+      "confidence": "Medium",
+      "status": "Completed"
+    },
+    {
+      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+      "timestamp": "2026-06-10T23:07:11",
+      "agent_name": "Assessment Agent",
+      "action": "Assess readiness and generate practice questions",
+      "input_summary": "practice_score=68, hours_studied=14",
+      "output_summary": "Practice score average: 68%\nStudy progress: 50.0% of recommended hours\nReadiness decision: At Risk\nPractice questions:\n1. Explain how Power BI modelling supports the learner's role.\n2. What is one risk of poor DAX understanding in an energy organisation?\n3. How would you apply data quality reporting in a grid operations or reporting scenario?\nGrounding source: manager_readiness_policy.md",
+      "sources": [
+        "manager_readiness_policy.md",
+        "grid_certification_guide.md"
+      ],
+      "confidence": "Medium",
+      "status": "Completed"
+    },
+    {
+      "run_id": "84c929b2-9621-4865-bfbf-514d38bb0504",
+      "timestamp": "2026-06-10T23:07:11",
+      "agent_name": "Safety Critic Agent",
+      "action": "Safety and responsible AI validation",
+      "input_summary": "Final learner response",
+      "output_summary": "Potential unsafe term detected: confidential",
+      "sources": [
+        "Safety rules inside SafetyCriticAgent"
+      ],
+      "confidence": "High",
+      "status": "Needs review"
+    }
+  ]
+}

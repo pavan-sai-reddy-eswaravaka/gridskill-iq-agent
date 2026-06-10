@@ -8,7 +8,7 @@ SRC = ROOT / "src"
 sys.path.append(str(SRC))
 
 from gridskill_multi_agent import GridSkillOrchestratorAgent
-
+from gridskill_multi_agent_v2 import GridSkillAdvancedOrchestrator
 
 st.set_page_config(
     page_title="GridSkill IQ",
@@ -32,11 +32,17 @@ st.write(
 st.write("The system uses specialised agents for learning path curation, study planning, engagement, assessment, manager insights and safety review.")
 
 agent = GridSkillOrchestratorAgent()
+advanced_agent = GridSkillAdvancedOrchestrator()
 
-tab1, tab2, tab3, tab4 = st.tabs(
-    ["Learner Readiness Agent", "Manager Insights Agent", "System Architecture", "Evaluation & Safety"]
+tab1, tab2, tab3, tab4, tab5 = st.tabs(
+    [
+        "Learner Readiness Agent",
+        "Manager Insights Agent",
+        "System Architecture",
+        "Evaluation & Safety",
+        "Advanced Trace"
+    ]
 )
-
 with tab1:
     st.header("Learner Certification Readiness Workflow")
 
@@ -115,3 +121,33 @@ with tab4:
     st.write("- Lists grounding sources in the agent response")
     st.write("- Includes a Safety Critic Agent")
     st.write("- Designed as decision support, not automatic certification approval")
+with tab5:
+    st.header("Advanced Agent Trace & Telemetry")
+
+    st.write(
+        "This tab shows the advanced V2 orchestration layer with structured outputs, "
+        "confidence scoring, source tracking, safety validation and JSON trace logging."
+    )
+
+    employee_id_v2 = st.selectbox(
+        "Choose a synthetic employee for advanced workflow",
+        ["EMP-001", "EMP-002", "EMP-003", "EMP-004", "EMP-005", "EMP-006"],
+        key="advanced_employee"
+    )
+
+    if st.button("Run Advanced V2 Learner Workflow"):
+        response = advanced_agent.learner_workflow(employee_id_v2)
+        st.text_area("Advanced Agent Output", response, height=650)
+
+    if st.button("Run Advanced V2 Manager Workflow"):
+        response = advanced_agent.manager_workflow()
+        st.text_area("Advanced Manager Output", response, height=500)
+
+    trace_path = ROOT / "reports" / "agent_trace_log.json"
+
+    if trace_path.exists():
+        st.subheader("Latest JSON Agent Trace Log")
+        trace_text = trace_path.read_text(encoding="utf-8")
+        st.code(trace_text, language="json")
+    else:
+        st.warning("No trace log found yet. Run the Advanced V2 workflow first.")
